@@ -3,321 +3,296 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Riset | Kepentingan Elit & Marginalisasi Masyarakat Lokal</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | [Nama]</title>
+    <meta name="description" content="Portfolio pribadi modern & minimalis: proyek, artikel, dan kontak." />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-content">
-        <div>
-          <h1>Portofolio Riset Kewarganegaraan</h1>
-          <p class="subtitle">Kepentingan Elit, Marginalisasi Masyarakat Lokal, dan Kerusakan Lingkungan dalam Pengelolaan Kekayaan Alam di Indonesia</p>
-        </div>
-        <nav class="main-nav">
-          <a href="#profil">Profil</a>
-          <a href="#ringkasan">Ringkasan</a>
-          <a href="#kronologi">Kronologi</a>
-          <a href="#kategori">Kategori Kajian</a>
-          <a href="#tugas-refleksi">Tugas & Refleksi</a>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#home" aria-label="Beranda">
+          <span class="brand__mark">●</span>
+          <span class="brand__text">[Nama]</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="site-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a class="nav__ghost" href="pages/riset/index.html" title="Buka versi portofolio riset sebelumnya">Riset</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- PROFIL TIM -->
-      <section id="profil" class="section">
+      <!-- HOME / HERO -->
+      <section class="section hero" id="home">
+        <div class="container hero__grid">
+          <div class="reveal">
+            <p class="eyebrow">Portfolio pribadi</p>
+            <h1 class="headline">Halo, Saya <span class="accent">[Nama]</span> – Web Developer / Designer</h1>
+            <p class="lead">
+              Saya membangun website modern yang cepat, responsif, dan mudah dikembangkan. Fokus saya adalah clean UI, UX yang nyaman,
+              serta implementasi front-end yang rapi.
+            </p>
+
+            <div class="cta">
+              <a class="btn" href="#portfolio">Lihat Portfolio</a>
+              <a class="btn btn--secondary" href="#contact">Hubungi Saya</a>
+            </div>
+
+            <div class="meta">
+              <span>Based in: Indonesia</span>
+              <span class="dot">•</span>
+              <span>Available: Freelance / Internship</span>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="Ringkasan singkat">
+            <h2 class="hero-card__title">Ringkas</h2>
+            <ul class="checklist">
+              <li>Front-end: HTML, CSS, JavaScript</li>
+              <li>UI: Layout rapi, whitespace, typography</li>
+              <li>Tools: Git, Figma, VS Code</li>
+              <li>Approach: Mobile-first & accessible</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
         <div class="container">
-          <h2>Profil Peneliti</h2>
-          <p class="section-intro">
-            Proyek ini disusun sebagai bagian dari mata kuliah Kewarganegaraan oleh mahasiswa Program Studi Informatika, Universitas Matana, dengan fokus pada keadilan sosial dan ekologis dalam pengelolaan sumber daya alam di Indonesia.
-          </p>
-          <div class="profil-grid">
-            <article class="profil-card">
-              <h3>Michael Juferson B.T</h3>
-              <p class="profil-role">Koordinator Tim & Penyusun Utama</p>
-              <p>
-                Bertanggung jawab untuk koordinasi keseluruhan penelitian, penyusunan struktur tulisan, dan integrasi temuan dari studi pustaka serta wawancara.
-              </p>
-              <p class="profil-contact">Kontak: <a href="mailto:michaeljuferson10@gmail.com">michaeljuferson10@gmail.com</a></p>
-            </article>
+          <div class="section-head reveal">
+            <h2>About</h2>
+            <p class="muted">
+              Ceritakan tentang diri kamu di sini: latar belakang, minat, dan apa yang membuat kamu berbeda.
+              Teks ini dibuat sebagai placeholder dan bisa kamu edit.
+            </p>
+          </div>
 
-            <article class="profil-card">
-              <h3>Fridolf Berlin Torotodo Zega</h3>
-              <p class="profil-role">Peneliti Lapangan & Analisis Sosial</p>
+          <div class="about-grid">
+            <article class="card reveal">
+              <h3>Profil</h3>
               <p>
-                Berfokus pada pengumpulan data kasus-kasus marginalisasi masyarakat lokal serta analisis hubungan kekuasaan antara negara, korporasi, dan komunitas adat.
+                Saya adalah developer/designer yang senang membangun produk digital dengan pendekatan minimalis. Saya suka menggabungkan
+                logika (engineering) dan estetika (design) agar hasil akhirnya terasa rapi, konsisten, dan nyaman dipakai.
               </p>
-            </article>
-
-            <article class="profil-card">
-              <h3>Bryan Lefrans Simarmata</h3>
-              <p class="profil-role">Pengelola Data & Visualisasi Argumen</p>
               <p>
-                Mengorganisir data primer dan sekunder, menyusun alur argumentasi dalam bagian hasil dan pembahasan, serta merapikan kutipan dan referensi.
+                Minat: UI/UX, design system, performance, dan penulisan dokumentasi.
               </p>
             </article>
 
-            <article class="profil-card">
-              <h3>Jerikho Ichtus Seo</h3>
-              <p class="profil-role">Kajian Teori & Refleksi Etis</p>
-              <p>
-                Mendalami teori elitisme, teori konflik, dan ekologi politik, lalu menghubungkannya dengan dimensi etika, spiritualitas, dan keadilan ekologis dalam konteks Indonesia.
-              </p>
+            <article class="card reveal">
+              <h3>Skill</h3>
+              <div class="pill-grid" aria-label="Daftar skill">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Tailwind / Bootstrap</span>
+                <span class="pill">React / Vue (opsional)</span>
+                <span class="pill">UI/UX</span>
+                <span class="pill">Git</span>
+                <span class="pill">Responsive Design</span>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <h3>Pengalaman / Pendidikan</h3>
+              <ul class="timeline">
+                <li>
+                  <div class="timeline__time">2024 – Sekarang</div>
+                  <div class="timeline__content">
+                    <strong>Mahasiswa Informatika</strong>
+                    <div class="muted">Universitas Matana (contoh)</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline__time">2023</div>
+                  <div class="timeline__content">
+                    <strong>Freelance Web</strong>
+                    <div class="muted">Landing page, UI redesign, optimasi performa (contoh)</div>
+                  </div>
+                </li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- RINGKASAN PROYEK -->
-      <section id="ringkasan" class="section section-alt">
+      <!-- PORTFOLIO -->
+      <section class="section section--alt" id="portfolio">
         <div class="container">
-          <h2>Ringkasan Proyek</h2>
-          <div class="summary-layout">
-            <div>
-              <h3>Inti Penelitian</h3>
-              <p>
-                Penelitian ini menganalisis bagaimana kekuasaan elit politik-ekonomi mendominasi pengelolaan sumber daya alam di Indonesia, sehingga menimbulkan marginalisasi masyarakat lokal dan kerusakan lingkungan. Dengan menggunakan teori elitisme, teori konflik Karl Marx, dan ekologi politik, kajian ini menunjukkan bahwa ketidakadilan dalam pengelolaan kekayaan alam bukanlah kebetulan, melainkan produk dari struktur kekuasaan yang timpang.
-              </p>
-              <p>
-                Hasilnya menegaskan bahwa dominasi elit dalam sektor pertambangan, perkebunan, dan infrastruktur menyebabkan distribusi manfaat yang tidak merata dan memperparah krisis ekologis. Penelitian ini juga menawarkan alternatif tata kelola yang lebih partisipatif, transparan, dan berkeadilan ekologis.
-              </p>
-            </div>
-            <aside class="summary-aside">
-              <h3>Kata Kunci</h3>
-              <ul class="tag-list">
-                <li>Elitisme</li>
-                <li>Marginalisasi</li>
-                <li>Konflik Sumber Daya</li>
-                <li>Ekologi Politik</li>
-                <li>Keadilan Lingkungan</li>
-              </ul>
-              <h3>Metode Singkat</h3>
-              <ul class="bullet-list">
-                <li>Pendekatan kualitatif-deskriptif</li>
-                <li>Wawancara mendalam dengan narasumber di berbagai daerah</li>
-                <li>Studi pustaka dari buku, jurnal, dan laporan LSM (WALHI, JATAM, AMAN, dll.)</li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <!-- KRONOLOGI -->
-      <section id="kronologi" class="section">
-        <div class="container">
-          <h2>Kronologi Pengembangan Proyek</h2>
-          <p class="section-intro">
-            Berikut alur kerja penelitian dari awal hingga penyusunan laporan akhir, disusun secara kronologis agar mudah diikuti sebagai portofolio proses belajar.
-          </p>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3>Tahap 1 &mdash; Identifikasi Isu & Rumusan Masalah</h3>
-                <p>
-                  Tim mengamati fenomena ketimpangan pemanfaatan kekayaan alam di Indonesia: sumber daya melimpah, tetapi masyarakat lokal sering dirugikan. Dari sini disusun <strong>rumusan masalah</strong> mengenai peran elit, bentuk marginalisasi, dampak multidimensi, dan strategi tata kelola yang adil.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3>Tahap 2 &mdash; Penyusunan Kerangka Teori & Tinjauan Pustaka</h3>
-                <p>
-                  Tim memilih tiga pilar teori utama: <em>elitisme</em>, <em>teori konflik</em>, dan <em>ekologi politik</em>. Literatur seperti Mills, Marx, Li, Peluso, Robison &amp; Hadiz, dan lainnya dikaji untuk memahami relasi kuasa, pertentangan kelas, serta dampak ekologis praktik ekstraktivisme.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3>Tahap 3 &mdash; Pengumpulan Data Primer & Sekunder</h3>
-                <p>
-                  Wawancara mendalam dilakukan dengan berbagai narasumber (tokoh masyarakat, aktivis, akademisi, dan pelayan gereja) yang hidup di wilayah terdampak pengelolaan SDA. Data ini diperkaya dengan laporan LSM, dokumen kebijakan, serta studi ilmiah terkait konflik agraria dan krisis ekologis.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3>Tahap 4 &mdash; Analisis Kritis & Penyusunan Pembahasan</h3>
-                <p>
-                  Temuan lapangan dihubungkan dengan kerangka teori. Tim mengkategorikan data ke dalam tema besar: dominasi elit, marginalisasi masyarakat lokal, dampak sosial-ekonomi, dan kerusakan ekologis. Dari sini lahir argumen utama penelitian.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <h3>Tahap 5 &mdash; Perumusan Rekomendasi & Refleksi</h3>
-                <p>
-                  Tim menyusun rekomendasi tata kelola SDA yang partisipatif, transparan, dan berbasis etika lingkungan. Pada tahap ini juga ditulis <strong>refleksi pribadi dan kolektif</strong> tentang peran warga negara, iman, dan ilmu pengetahuan dalam memperjuangkan keadilan ekologis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- KATEGORI KAJIAN -->
-      <section id="kategori" class="section section-alt">
-        <div class="container">
-          <h2>Kategori Kajian Utama</h2>
-          <p class="section-intro">
-            Untuk memudahkan pembaca, isi penelitian dikelompokkan ke dalam beberapa kategori. Gunakan tombol berikut untuk menyaring bagian yang ingin dilihat.
-          </p>
-
-          <div class="filter-controls">
-            <button class="filter-btn active" data-filter="all">Semua</button>
-            <button class="filter-btn" data-filter="teori">Teori</button>
-            <button class="filter-btn" data-filter="metodologi">Metodologi</button>
-            <button class="filter-btn" data-filter="temuan">Temuan Lapangan</button>
-            <button class="filter-btn" data-filter="dampak">Dampak</button>
-            <button class="filter-btn" data-filter="strategi">Strategi & Rekomendasi</button>
+          <div class="section-head reveal">
+            <h2>Portfolio</h2>
+            <p class="muted">3–6 proyek terbaik kamu. Ganti judul, deskripsi, dan link sesuai proyek asli.</p>
           </div>
 
-          <div class="card-grid" id="kategori-grid">
-            <article class="card" data-category="teori">
-              <h3>Teori Elitisme</h3>
-              <p>
-                Menggambarkan bagaimana kekuasaan terkonsentrasi pada kelompok kecil yang memiliki akses terhadap sumber daya politik dan ekonomi. Dalam konteks Indonesia, hal ini tampak pada jaringan elit yang mengendalikan izin tambang, perkebunan, dan proyek infrastruktur.
-              </p>
+          <div class="grid cards">
+            <article class="card reveal">
+              <h3>Project 1 — Landing Page Produk</h3>
+              <p class="muted">Landing page dengan desain clean, mobile-first, dan animasi ringan.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </article>
 
-            <article class="card" data-category="teori">
-              <h3>Teori Konflik (Karl Marx)</h3>
-              <p>
-                Menjelaskan pertentangan antara pemilik modal dan kelompok yang dieksploitasi. Konflik struktural ini terlihat pada perampasan tanah, eksploitasi tenaga kerja lokal, dan kriminalisasi warga yang melawan kebijakan tidak adil.
-              </p>
+            <article class="card reveal">
+              <h3>Project 2 — Dashboard UI</h3>
+              <p class="muted">Layout dashboard menggunakan grid/flex dengan komponen reusable.</p>
+              <div class="tag-row">
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Design System</span>
+                <span class="tag">Accessibility</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </article>
 
-            <article class="card" data-category="teori">
-              <h3>Ekologi Politik</h3>
-              <p>
-                Menyoroti bahwa kerusakan lingkungan bukan sekadar masalah teknis, tetapi erat terkait dengan struktur kekuasaan yang timpang antara negara, korporasi, dan masyarakat lokal.
-              </p>
+            <article class="card reveal">
+              <h3>Project 3 — Website Portfolio</h3>
+              <p class="muted">Single-page portfolio dengan struktur semantic, responsive, dan clean.</p>
+              <div class="tag-row">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </article>
 
-            <article class="card" data-category="metodologi">
-              <h3>Pendekatan Kualitatif-Deskriptif</h3>
-              <p>
-                Menggunakan wawancara mendalam dan studi pustaka untuk memahami pengalaman konkret masyarakat terdampak serta kebijakan yang mengatur pengelolaan sumber daya alam.
-              </p>
-            </article>
-
-            <article class="card" data-category="temuan">
-              <h3>Dominasi Elit dalam Kebijakan SDA</h3>
-              <p>
-                Proses perizinan tambang dan perkebunan berlangsung tertutup, minim partisipasi publik, dan sering kali sarat kepentingan politik-ekonomi jangka pendek.
-              </p>
-            </article>
-
-            <article class="card" data-category="temuan">
-              <h3>Marginalisasi Masyarakat Lokal & Adat</h3>
-              <p>
-                Masyarakat kehilangan akses ke tanah, air, dan hutan, sekaligus kehilangan ruang partisipasi dalam pengambilan keputusan yang menyangkut hidup mereka.
-              </p>
-            </article>
-
-            <article class="card" data-category="dampak">
-              <h3>Dampak Sosial & Budaya</h3>
-              <p>
-                Terjadi disintegrasi sosial, konflik agraria, erosi nilai budaya, dan trauma kolektif di komunitas yang terdampak proyek ekstraktif berskala besar.
-              </p>
-            </article>
-
-            <article class="card" data-category="dampak">
-              <h3>Dampak Ekonomi & Ekologis</h3>
-              <p>
-                Ketimpangan ekonomi meningkat sementara kerusakan lingkungan (deforestasi, pencemaran, bencana ekologis) memperburuk kualitas hidup masyarakat.
-              </p>
-            </article>
-
-            <article class="card" data-category="strategi">
-              <h3>Partisipasi & Pengakuan Hak Masyarakat Adat</h3>
-              <p>
-                Menekankan pentingnya musyawarah, persetujuan bebas tanpa paksaan, dan pengakuan hak ulayat sebagai dasar kebijakan pengelolaan SDA.
-              </p>
-            </article>
-
-            <article class="card" data-category="strategi">
-              <h3>Etika Lingkungan & Keadilan Sosial</h3>
-              <p>
-                Mengusulkan paradigma pembangunan yang menempatkan manusia dan alam sebagai satu kesatuan etis, bukan sekadar objek eksploitasi ekonomi.
-              </p>
+            <article class="card reveal">
+              <h3>Project 4 — UI/UX Case Study</h3>
+              <p class="muted">Studi kasus singkat: problem → proses → solusi → hasil.</p>
+              <div class="tag-row">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Prototype</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- TUGAS KHUSUS & REFLEKSI -->
-      <section id="tugas-refleksi" class="section">
+      <!-- BLOG -->
+      <section class="section" id="blog">
         <div class="container">
-          <h2>Tugas Khusus & Refleksi Proyek</h2>
-          <p class="section-intro">
-            Bagian ini merangkum pembagian tugas dalam tim sekaligus refleksi kritis yang lahir dari proses penelitian, sebagai bukti capaian belajar dan kesadaran kewarganegaraan.
-          </p>
+          <div class="section-head reveal">
+            <h2>Blog</h2>
+            <p class="muted">Kumpulan artikel teknologi, pengalaman, dan tutorial. (Card sederhana + hover)</p>
+          </div>
 
-          <div class="task-grid">
-            <article class="task-card">
-              <h3>Tugas Akademik</h3>
-              <ul class="bullet-list">
-                <li>Menyusun kerangka teori yang menggabungkan elitisme, teori konflik, dan ekologi politik.</li>
-                <li>Melakukan studi pustaka mendalam dari buku, jurnal, dan laporan organisasi masyarakat sipil.</li>
-                <li>Melakukan wawancara mendalam dengan narasumber di berbagai daerah.</li>
-                <li>Menganalisis data dan mengkategorikan temuan menjadi dominasi elit, marginalisasi, dampak, dan strategi.</li>
-                <li>Menyusun laporan ilmiah lengkap beserta daftar pustaka sesuai kaidah akademik.</li>
-              </ul>
-            </article>
-
-            <article class="task-card">
-              <h3>Tugas Kewarganegaraan</h3>
-              <ul class="bullet-list">
-                <li>Mengidentifikasi ketidakadilan struktural dalam pengelolaan kekayaan alam sebagai isu kewarganegaraan.</li>
-                <li>Mengembangkan empati terhadap masyarakat adat dan lokal yang mengalami marginalisasi.</li>
-                <li>Merefleksikan peran warga negara dalam mengawasi kebijakan publik dan mendorong tata kelola yang adil.</li>
-                <li>Menyusun gagasan advokasi berbasis data untuk mendukung keadilan ekologis.</li>
-              </ul>
-            </article>
-
-            <article class="task-card task-card-refleksi">
-              <h3>Refleksi Pribadi & Kolektif</h3>
-              <p>
-                Melalui proyek ini, tim menyadari bahwa isu lingkungan tidak bisa dipisahkan dari isu keadilan sosial dan politik. Kekayaan alam yang melimpah tidak otomatis membawa kesejahteraan bila struktur kekuasaan didominasi oleh segelintir elit.
-              </p>
-              <button class="toggle-refleksi" type="button">Baca refleksi lengkap</button>
-              <div class="refleksi-detail is-collapsed" id="refleksi-detail">
-                <p>
-                  Penelitian ini menantang kami untuk keluar dari cara pandang yang sempit dan teknis terhadap pembangunan. Dengan mendengar langsung suara narasumber, kami belajar bahwa di balik statistik ekonomi dan istilah kebijakan, ada wajah-wajah konkret yang kehilangan tanah, mata pencaharian, dan bahkan harapan. Di sisi lain, kami juga melihat adanya gerakan akar rumput yang terus berjuang melalui jalur hukum, pendidikan, komunitas iman, dan kesenian lokal.
-                </p>
-                <p>
-                  Sebagai mahasiswa Informatika, kami menyadari bahwa teknologi tidak netral: ia bisa mendukung kepentingan elit, tetapi juga bisa dipakai untuk memperkuat suara masyarakat yang termarginalkan. Portofolio web ini adalah salah satu upaya kecil kami untuk mendokumentasikan pengetahuan, membuka akses informasi, dan mengajak lebih banyak orang berpikir kritis tentang tata kelola sumber daya alam di Indonesia.
-                </p>
-                <p>
-                  Ke depan, kami berharap dapat terus mengintegrasikan keahlian teknis dengan kepekaan sosial dan etika lingkungan, sehingga ilmu yang kami pelajari tidak hanya bermanfaat bagi diri sendiri, tetapi juga bagi masyarakat luas dan kelestarian ciptaan.
-                </p>
+          <div class="grid cards">
+            <article class="card reveal">
+              <p class="eyebrow">Artikel</p>
+              <h3>Kepentingan Elit, Marginalisasi Masyarakat Lokal, dan Kerusakan Lingkungan...</h3>
+              <p class="muted">Ringkasan penelitian tentang relasi kuasa, konflik sumber daya, dan keadilan ekologis.</p>
+              <div class="card-actions">
+                <a class="link" href="pages/blog/kepentingan-elit.html">Baca</a>
+                <a class="link" href="pages/blog/index.html">Semua artikel</a>
               </div>
             </article>
+
+            <article class="card reveal">
+              <p class="eyebrow">Tutorial</p>
+              <h3>Tips Membuat Layout Responsive (Mobile-first)</h3>
+              <p class="muted">Prinsip breakpoint, grid, dan cara menjaga whitespace tetap nyaman.</p>
+              <div class="card-actions">
+                <a class="link" href="pages/blog/index.html">Baca</a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <p class="eyebrow">Pengalaman</p>
+              <h3>Belajar UI/UX untuk Developer</h3>
+              <p class="muted">Hal-hal praktis yang langsung bisa dipakai ketika mendesain interface.</p>
+              <div class="card-actions">
+                <a class="link" href="pages/blog/index.html">Baca</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section--alt" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Contact</h2>
+            <p class="muted">Silakan hubungi saya lewat kontak di bawah atau gunakan form.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card reveal">
+              <h3>Info Kontak</h3>
+              <ul class="contact-list">
+                <li><span class="muted">Email:</span> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
+                <li><span class="muted">WhatsApp:</span> <a href="#">+62xxxxxxxxxxx</a></li>
+                <li><span class="muted">GitHub:</span> <a href="#" target="_blank" rel="noopener">github.com/username</a></li>
+                <li><span class="muted">LinkedIn:</span> <a href="#" target="_blank" rel="noopener">linkedin.com/in/username</a></li>
+              </ul>
+
+              <p class="muted" style="margin-top: 1rem;">
+                Tips: ganti link & username di atas sesuai data kamu.
+              </p>
+            </div>
+
+            <form class="card reveal" id="contact-form" novalidate>
+              <h3>Kirim Pesan</h3>
+
+              <label class="field">
+                <span>Nama</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <label class="field">
+                <span>Pesan</span>
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <button class="btn" type="submit">Kirim</button>
+              <p class="form-hint muted" id="form-hint" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>
-          &copy; <span id="year"></span> Tim Riset Kewarganegaraan &mdash; Informatika, Universitas Matana.
-        </p>
-        <p>
-          Naskah lengkap dapat diakses melalui berkas PDF <em>"Kepentingan Elit, Marginalisasi Masyarakat Lokal, dan Kerusakan Lingkungan dalam Pengelolaan Kekayaan Alam di Indonesia"</em> di repositori GitHub Anda.
-        </p>
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>&copy; <span id="year"></span> [Nama]. All rights reserved.</p>
+        <a class="to-top" href="#top">Kembali ke atas</a>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
