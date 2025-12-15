@@ -1,15 +1,19 @@
 :root {
   --bg: #ffffff;
-  --bg-alt: #f8fafc;
-  --text: #0f172a;
+  --bg-alt: #f7f8fc;
+  --text: #0b1220;
   --muted: #475569;
-  --border: #e2e8f0;
-  --accent: #2563eb;
-  --accent-soft: rgba(37, 99, 235, 0.12);
+  --border: rgba(226, 232, 240, 0.9);
+
+  --accent: #4f46e5;
+  --accent-2: #7c3aed;
+  --accent-soft: rgba(79, 70, 229, 0.12);
 
   --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+  --shadow-strong: 0 26px 80px rgba(15, 23, 42, 0.14);
   --radius: 16px;
   --container: 1150px;
+  --card-bg: rgba(255, 255, 255, 0.78);
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -26,7 +30,10 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(1200px 700px at 8% -10%, rgba(79, 70, 229, 0.22), transparent 60%),
+    radial-gradient(900px 520px at 110% 10%, rgba(124, 58, 237, 0.18), transparent 55%),
+    var(--bg);
   line-height: 1.75;
 }
 
@@ -133,7 +140,7 @@ body {
 
 .hero {
   padding: 3.25rem 0 1.5rem;
-  background: linear-gradient(180deg, rgba(37, 99, 235, 0.10), rgba(255, 255, 255, 0));
+  background: linear-gradient(180deg, rgba(79, 70, 229, 0.12), rgba(255, 255, 255, 0));
   border-bottom: 1px solid var(--border);
 }
 
@@ -181,7 +188,8 @@ body {
 
 .article {
   border: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.75rem;
@@ -244,7 +252,8 @@ body {
 .toc {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg);
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
   box-shadow: var(--shadow);
   padding: 1.25rem;
 }

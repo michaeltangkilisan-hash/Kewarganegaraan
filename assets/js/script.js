@@ -78,8 +78,8 @@ if (form && hint) {
     const subject = encodeURIComponent(`Pesan dari ${name}`);
     const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\n${message}`);
 
-    // Ganti email tujuan di sini
-    const to = 'emailkamu@example.com';
+    // Email tujuan
+    const to = 'michaeljuferson10@gmail.com';
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
   });
 }
