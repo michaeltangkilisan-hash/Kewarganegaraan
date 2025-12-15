@@ -56,372 +56,128 @@
 
     <main class="content" id="content">
       <div class="container post-layout">
-        <article class="article" aria-label="Isi artikel">
-          <section class="quick" aria-label="Ringkasan cepat" data-quick-tabs>
-            <h2 class="quick__title">Ringkasan Cepat</h2>
-
-            <div class="quick__tabs" role="tablist" aria-label="Ringkasan Cepat">
-              <button class="quick__tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-data" id="tab-data">Data akurat</button>
-              <button class="quick__tab" type="button" role="tab" aria-selected="false" aria-controls="panel-metode" id="tab-metode">Metode</button>
-              <button class="quick__tab" type="button" role="tab" aria-selected="false" aria-controls="panel-analisis" id="tab-analisis">Pembahasan & analisis</button>
-              <button class="quick__tab" type="button" role="tab" aria-selected="false" aria-controls="panel-kesimpulan" id="tab-kesimpulan">Kesimpulan</button>
+        <article class="article" aria-label="Konten proyek">
+          <section class="media-tabs" data-tabs>
+            <div class="media-tabs__tabs" role="tablist" aria-label="Konten">
+              <button class="media-tabs__tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-docs" id="tab-docs">Docs</button>
+              <button class="media-tabs__tab" type="button" role="tab" aria-selected="false" aria-controls="panel-youtube" id="tab-youtube">YouTube</button>
+              <button class="media-tabs__tab" type="button" role="tab" aria-selected="false" aria-controls="panel-presentasi" id="tab-presentasi">Presentasi</button>
             </div>
 
-            <div class="quick__panels">
-              <div class="quick__panel" role="tabpanel" tabindex="0" id="panel-data" aria-labelledby="tab-data">
-                <p class="muted">
-                  Riset ini merangkum temuan dari studi pustaka (buku/jurnal/laporan) dan data lapangan yang dijelaskan di bagian metodologi.
-                  Intinya: manfaat ekonomi SDA cenderung terkonsentrasi pada elit, sementara masyarakat lokal menanggung beban sosial dan ekologis.
-                </p>
-              </div>
+            <div class="media-tabs__panels">
+              <section class="media-tabs__panel" role="tabpanel" tabindex="0" id="panel-docs" aria-labelledby="tab-docs">
+                <h2>Dokumen (PDF)</h2>
+                <p class="muted">Dokumen riset ditampilkan langsung di bawah ini.</p>
 
-              <div class="quick__panel" role="tabpanel" tabindex="0" id="panel-metode" aria-labelledby="tab-metode" hidden>
-                <p class="muted">
-                  Pendekatan <strong>kualitatif-deskriptif</strong> melalui <strong>studi pustaka</strong> dan <strong>wawancara</strong>. Analisis dilakukan dengan reduksi data,
-                  kategorisasi tematik, lalu penarikan kesimpulan berdasarkan kerangka elitisme, konflik (Marx), dan ekologi politik.
-                </p>
-              </div>
+                <div class="embed embed--doc" aria-label="Dokumen PDF">
+                  <iframe
+                    src="../../Kepentingan%20Elit%2C%20Marginalisasi%20Masyarakat%20Lokal%2C%20dan%20Kerusakan%20Lingkungan%20dalam%20Pengelolaan%20Kekayaan%20Alam%20di%20Indonesia%20%286%29.pdf"
+                    title="Dokumen PDF"
+                  ></iframe>
+                </div>
 
-              <div class="quick__panel" role="tabpanel" tabindex="0" id="panel-analisis" aria-labelledby="tab-analisis" hidden>
-                <p class="muted">
-                  Pembahasan menyoroti dominasi elit pada kebijakan/perizinan, bentuk marginalisasi (akses tanah/air/hutan, partisipasi semu), serta dampak sosial-ekonomi-ekologis
-                  seperti konflik agraria, ketimpangan, dan degradasi lingkungan.
-                </p>
-              </div>
+                <div class="btn-row">
+                  <a class="btn btn--ghost" href="../../Kepentingan%20Elit%2C%20Marginalisasi%20Masyarakat%20Lokal%2C%20dan%20Kerusakan%20Lingkungan%20dalam%20Pengelolaan%20Kekayaan%20Alam%20di%20Indonesia%20%286%29.pdf" target="_blank" rel="noopener">Buka PDF</a>
+                </div>
 
-              <div class="quick__panel" role="tabpanel" tabindex="0" id="panel-kesimpulan" aria-labelledby="tab-kesimpulan" hidden>
-                <p class="muted">
-                  Diperlukan tata kelola SDA yang lebih <strong>partisipatif</strong>, <strong>transparan</strong>, dan <strong>berkeadilan ekologis</strong> agar distribusi manfaat lebih adil
-                  dan kerusakan lingkungan dapat ditekan.
-                </p>
-              </div>
-            </div>
+                <p class="muted" style="margin: 0.75rem 0 0;">Jika PDF tidak tampil di browser, gunakan tombol “Buka PDF”.</p>
+              </section>
 
-            <div class="showcase" aria-label="Showcase">
-              <h3 class="showcase__title">Showcase</h3>
-              <div class="showcase__actions">
-                <a class="btn btn--youtube" href="https://youtu.be/6Xs0vo_IE-w?si=EuJDwL20MsVXF5go" target="_blank" rel="noopener">YouTube</a>
-                <a class="btn" href="https://www.canva.com/design/DAG4c1dXZTo/39WwTMPHtf_08ReFNIidTw/edit?utm_content=DAG4c1dXZTo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Presentasi</a>
-              </div>
+              <section class="media-tabs__panel" role="tabpanel" tabindex="0" id="panel-youtube" aria-labelledby="tab-youtube" hidden>
+                <h2>Video (YouTube)</h2>
+                <div class="embed" aria-label="YouTube player">
+                  <iframe
+                    src="https://www.youtube.com/embed/6Xs0vo_IE-w"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="btn-row">
+                  <a class="btn btn--ghost" href="https://youtu.be/6Xs0vo_IE-w?si=EuJDwL20MsVXF5go" target="_blank" rel="noopener">Buka di YouTube</a>
+                </div>
+              </section>
+
+              <section class="media-tabs__panel" role="tabpanel" tabindex="0" id="panel-presentasi" aria-labelledby="tab-presentasi" hidden>
+                <h2>Presentasi</h2>
+                <div class="embed" aria-label="Presentasi">
+                  <iframe
+                    src="https://www.canva.com/design/DAG4c1dXZTo/view?embed"
+                    title="Canva presentation"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="btn-row">
+                  <a class="btn btn--ghost" href="https://www.canva.com/design/DAG4c1dXZTo/39WwTMPHtf_08ReFNIidTw/edit?utm_content=DAG4c1dXZTo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Buka di Canva</a>
+                </div>
+                <p class="muted" style="margin: 0.75rem 0 0;">Jika embed tidak tampil (tergantung akses), silakan buka lewat tombol di atas.</p>
+              </section>
             </div>
           </section>
 
-          <div class="callout">
-            <strong>ABSTRAK</strong>
-            <p>
-              Pengelolaan sumber daya alam di Indonesia menunjukkan adanya ketimpangan struktural yang kuat antara kepentingan elit politik-ekonomi dan masyarakat lokal.
-              Meskipun Indonesia kaya akan sumber daya alam, manfaat ekonomi dan sosial dari kekayaan tersebut sering kali hanya dinikmati oleh segelintir kelompok elit,
-              sementara masyarakat adat dan lokal mengalami marginalisasi serta kerusakan lingkungan yang serius.
-            </p>
-            <p>
-              Penelitian ini bertujuan untuk menganalisis keterlibatan elit dalam kebijakan pengelolaan sumber daya alam, mengidentifikasi bentuk-bentuk marginalisasi masyarakat lokal,
-              serta menjelaskan dampak sosial, ekonomi, dan ekologis dari ketimpangan kekuasaan tersebut.
-            </p>
-            <p>
-              Pendekatan teoritis yang digunakan meliputi teori elitisme, teori konflik Karl Marx, dan teori ekologi politik.
-              Hasil kajian menunjukkan dominasi elit dalam sektor pertambangan, perkebunan, dan infrastruktur telah menciptakan ketidakadilan distribusi manfaat serta memperburuk krisis lingkungan.
-              Diperlukan strategi tata kelola yang lebih partisipatif, transparan, dan berbasis keadilan ekologis.
-            </p>
-            <p><strong>Kata kunci:</strong> elitisme, marginalisasi, konflik sumber daya, ekologi politik, keadilan lingkungan</p>
-          </div>
+          <section class="luaran" aria-label="Luaran">
+            <h2>Luaran</h2>
+            <p class="muted">Kronologi dokumen dan tugas khusus/refleksi terkait proyek.</p>
 
-          <div class="callout">
-            <strong>ABSTRACT</strong>
-            <p>
-              The management of natural resources in Indonesia reflects a deep structural imbalance between the interests of political-economic elites and local communities.
-              Although Indonesia is rich in natural resources, the economic and social benefits are often concentrated among a small group of elites,
-              while indigenous and local communities face marginalization and severe environmental degradation.
-            </p>
-            <p>
-              This study aims to analyze the role of elites in resource management policies, identify forms of marginalization affecting local communities,
-              and explain the social, economic, and ecological impacts of these power inequalities.
-            </p>
-            <p>
-              The theoretical framework draws on elitism theory, Karl Marx’s conflict theory, and political ecology.
-              The findings reveal that elite dominance in mining, plantation, and infrastructure sectors has led to unequal benefit distribution and worsened environmental crises.
-              A more participatory, transparent, and ecologically just governance model is essential.
-            </p>
-            <p><strong>Keywords:</strong> elitism, marginalization, resource conflict, political ecology, environmental justice</p>
-          </div>
+            <h3>Kronologi Dokumen</h3>
+            <ol class="doc-steps">
+              <li class="doc-step">
+                <h4>Tahap 1 — Identifikasi Isu & Rumusan Masalah</h4>
+                <p class="muted">Mengamati ketimpangan pemanfaatan SDA, lalu menyusun rumusan masalah: peran elit, marginalisasi, dampak, dan strategi keadilan.</p>
+              </li>
+              <li class="doc-step">
+                <h4>Tahap 2 — Kerangka Teori & Tinjauan Pustaka</h4>
+                <p class="muted">Menggunakan teori elitisme, teori konflik (Marx), dan ekologi politik sebagai landasan analisis.</p>
+              </li>
+              <li class="doc-step">
+                <h4>Tahap 3 — Pengumpulan Data</h4>
+                <p class="muted">Studi pustaka + wawancara untuk memperkuat argumen dan menggambarkan dampak pada masyarakat lokal.</p>
+              </li>
+              <li class="doc-step">
+                <h4>Tahap 4 — Analisis & Penyusunan Pembahasan</h4>
+                <p class="muted">Mengelompokkan temuan: dominasi elit, marginalisasi, dampak sosial-ekonomi, dan kerusakan ekologis.</p>
+              </li>
+              <li class="doc-step">
+                <h4>Tahap 5 — Rekomendasi & Refleksi</h4>
+                <p class="muted">Merumuskan rekomendasi tata kelola yang partisipatif, transparan, dan berkeadilan ekologis, serta refleksi kewarganegaraan.</p>
+              </li>
+            </ol>
 
-          <hr class="hr" />
+            <h3>Tugas Khusus & Refleksi Proyek</h3>
+            <div class="doc-grid">
+              <section class="doc-card">
+                <h4>Tugas Akademik</h4>
+                <ul>
+                  <li>Menyusun kerangka teori (elitisme, konflik, ekologi politik).</li>
+                  <li>Studi pustaka dari buku, jurnal, dan laporan organisasi masyarakat sipil.</li>
+                  <li>Wawancara dan pengolahan data menjadi tema-tema pembahasan.</li>
+                  <li>Menyusun dokumen laporan dan merapikan referensi.</li>
+                </ul>
+              </section>
 
-          <h2>Pendahuluan</h2>
+              <section class="doc-card">
+                <h4>Tugas Kewarganegaraan</h4>
+                <ul>
+                  <li>Mengidentifikasi ketidakadilan struktural sebagai isu kewarganegaraan.</li>
+                  <li>Mengembangkan empati pada masyarakat lokal/adat yang terdampak.</li>
+                  <li>Merefleksikan peran warga negara dalam mengawasi kebijakan publik.</li>
+                  <li>Merumuskan gagasan advokasi berbasis data untuk keadilan ekologis.</li>
+                </ul>
+              </section>
 
-          <h3>A. Latar Belakang</h3>
-          <p>
-            Indonesia dikenal sebagai salah satu negara dengan kekayaan sumber daya alam yang melimpah, mulai dari hutan tropis, hasil tambang, minyak dan gas,
-            hingga keanekaragaman hayati laut. Namun, melimpahnya sumber daya tersebut tidak selalu berdampak positif bagi masyarakat lokal.
-          </p>
-          <p>
-            Dalam praktiknya, pengelolaan sumber daya alam sering kali lebih mengutamakan kepentingan elit politik dan ekonomi dibandingkan kesejahteraan masyarakat
-            di sekitar wilayah pengelolaan. Kepentingan elit ini terlihat melalui kontrol kebijakan, pemberian izin usaha pertambangan, perkebunan, atau konsesi hutan
-            yang cenderung mengabaikan hak-hak masyarakat lokal.
-          </p>
-          <p>
-            Akibatnya, terjadi marginalisasi: masyarakat adat dan lokal kehilangan akses terhadap tanah, hutan, maupun laut yang selama ini menjadi sumber penghidupan.
-            Selain marginalisasi sosial-ekonomi, eksploitasi besar-besaran juga menimbulkan kerusakan lingkungan (deforestasi, pencemaran air dan tanah,
-            degradasi ekosistem laut, hingga konflik agraria).
-          </p>
-
-          <h3>B. Landasan Teori</h3>
-
-          <h3>1. Teori Elitisme (Gaetano Mosca, Vilfredo Pareto, C. Wright Mills)</h3>
-          <p>
-            Teori elitisme berpandangan bahwa dalam setiap masyarakat, kekuasaan tidak pernah tersebar secara merata. Kekuasaan cenderung terkonsentrasi pada kelompok kecil
-            yang memiliki akses lebih besar terhadap sumber daya politik, ekonomi, maupun sosial.
-          </p>
-          <ol>
-            <li>
-              <strong>Gaetano Mosca</strong> menekankan adanya dua kelas utama: kelas yang memerintah (minoritas elit) dan kelas yang diperintah (mayoritas rakyat).
-              Minoritas elit menguasai mayoritas karena organisasi yang lebih solid serta kemampuan mengendalikan instrumen kekuasaan.
-            </li>
-            <li>
-              <strong>Vilfredo Pareto</strong> memperkenalkan konsep sirkulasi elit: elit yang berkuasa tidak abadi, namun pola dominasi tetap bertahan.
-            </li>
-            <li>
-              <strong>C. Wright Mills</strong> (The Power Elite, 1956) menjelaskan kekuasaan dikuasai oleh kelompok elit yang saling terkait dalam jaringan kepentingan.
-            </li>
-          </ol>
-          <p>
-            Dalam konteks Indonesia, teori elitisme membantu memahami bagaimana izin tambang, konsesi perkebunan skala besar, maupun proyek pembangunan strategis
-            sering dikendalikan oleh jaringan elit politik dan korporasi, sementara masyarakat lokal jarang dilibatkan.
-          </p>
-
-          <h3>2. Teori Konflik (Karl Marx)</h3>
-          <p>
-            Karl Marx melihat bahwa masyarakat ditandai pertentangan kepentingan antara kelompok yang menguasai alat produksi dengan kelompok yang dieksploitasi.
-            Konflik ini bersifat struktural dan bersumber pada ketidakadilan sistem ekonomi-politik.
-          </p>
-          <ul>
-            <li>
-              Kelas borjuis (pemilik modal) mengendalikan alat produksi termasuk sumber daya alam, mengeksploitasi kelas proletar demi keuntungan.
-            </li>
-            <li>
-              Konflik muncul karena distribusi hasil produksi tidak adil: keuntungan terkonsentrasi pada elit, sedangkan kerugian ditanggung masyarakat bawah.
-            </li>
-          </ul>
-          <p>
-            Dalam pengelolaan SDA di Indonesia, teori konflik menyoroti bentuk marginalisasi seperti: perampasan tanah (land grabbing), eksploitasi tenaga kerja,
-            dan kriminalisasi masyarakat ketika melakukan perlawanan.
-          </p>
-
-          <h3>3. Teori Ekologi Politik (Political Ecology)</h3>
-          <p>
-            Ekologi politik menggabungkan analisis politik, ekonomi, dan ekologi untuk memahami bagaimana kekuasaan memengaruhi relasi manusia–lingkungan.
-            Robbins (2012) menegaskan kerusakan lingkungan bukan sekadar masalah teknis, tetapi konsekuensi struktur politik-ekonomi yang tidak adil.
-          </p>
-          <ul>
-            <li>Lingkungan bukan arena netral, melainkan arena konflik kepentingan.</li>
-            <li>Degradasi ekologis sering akibat intervensi ekonomi-politik yang berpihak pada elit.</li>
-            <li>Masyarakat lokal menanggung beban kerusakan, sementara keuntungan dinikmati korporasi/elit.</li>
-          </ul>
-          <p>
-            Relevansi konteks Indonesia tampak pada kasus pertambangan nikel (Sulawesi), perkebunan sawit (Kalimantan, Sumatra), hingga tambang emas (Papua)
-            yang menyisakan pencemaran dan konflik, sementara masyarakat setempat menerima manfaat terbatas.
-          </p>
-
-          <h3>C. Tinjauan Pustaka</h3>
-          <p>
-            Kajian elitisme menegaskan kelompok kecil dengan akses pada kekuasaan politik-ekonomi memiliki kendali besar terhadap kebijakan publik.
-            Mills (1956) menggambarkan segelintir aktor menentukan arah kebijakan negara; di Indonesia, Robison &amp; Hadiz (2004) menunjukkan oligarki tetap menguasai sektor strategis.
-          </p>
-          <p>
-            Literatur masyarakat adat menegaskan kelompok lokal kerap dirugikan dalam proyek pembangunan berbasis SDA.
-            Peluso (1992) menunjukkan pemiskinan struktural di wilayah kaya sumber daya; Li (2007) menekankan retorika kesejahteraan sering menyingkirkan hak masyarakat lokal.
-            Laporan AMAN juga mengonfirmasi konflik agraria sering dipicu pengabaian hak ulayat.
-          </p>
-          <p>
-            Dominasi elit berlangsung melalui hegemoni dan legitimasi kebijakan (Gramsci). Hall, Hirsch, &amp; Li (2011) menekankan narasi pembangunan sering menjadi justifikasi penguasaan lahan.
-            Di Indonesia, kebijakan pro-investasi seperti Omnibus Law banyak dikritik karena melemahkan perlindungan hak masyarakat lokal dan kelestarian lingkungan.
-          </p>
-
-          <h3>D. Rumusan Masalah</h3>
-          <ol>
-            <li>Bagaimana kepentingan elit politik dan ekonomi memengaruhi kebijakan pengelolaan SDA di Indonesia?</li>
-            <li>Bagaimana bentuk marginalisasi masyarakat lokal dan adat dalam praktik pengelolaan SDA?</li>
-            <li>Apa dampak sosial, ekonomi, dan ekologis dari ketimpangan kekuasaan ini?</li>
-            <li>Strategi apa yang dapat diterapkan untuk mendorong keadilan dalam tata kelola SDA?</li>
-          </ol>
-
-          <h3>E. Tujuan Penelitian</h3>
-          <ol>
-            <li>Menganalisis keterlibatan/kepentingan elit dalam pengelolaan SDA di Indonesia.</li>
-            <li>Mengidentifikasi bentuk marginalisasi masyarakat lokal dalam konteks tersebut.</li>
-            <li>Menjelaskan dampak ketimpangan kekuasaan terhadap lingkungan dan kesejahteraan masyarakat.</li>
-            <li>Memberikan rekomendasi alternatif untuk tata kelola SDA yang lebih adil dan berkelanjutan.</li>
-          </ol>
-
-          <hr class="hr" />
-
-          <h2>Metodologi</h2>
-          <p>
-            Penelitian ini menggunakan pendekatan kualitatif-deskriptif untuk memahami relasi kekuasaan, praktik pengelolaan SDA, serta dampaknya terhadap masyarakat lokal dan lingkungan.
-            Pendekatan dipilih karena permasalahan bersifat kompleks dan terkait dinamika sosial-politik, ekonomi, serta ekologi.
-          </p>
-
-          <h3>A. Sumber Data</h3>
-          <ul>
-            <li>
-              <strong>Data primer</strong>: wawancara mendalam terkait kasus pengelolaan SDA (pertambangan, perkebunan sawit, kehutanan) dengan informan masyarakat, aktivis,
-              pemerintah daerah, serta akademisi.
-            </li>
-            <li>
-              <strong>Data sekunder</strong>: laporan LSM, dokumen kebijakan, artikel ilmiah, buku, dan laporan penelitian terdahulu.
-            </li>
-          </ul>
-
-          <h3>B. Teknik Pengumpulan Data</h3>
-          <ul>
-            <li>Studi pustaka (landasan teori dan temuan empiris).</li>
-            <li>Wawancara semi-terstruktur (pengalaman langsung masyarakat terdampak & pihak terkait).</li>
-          </ul>
-
-          <h3>C. Teknik Analisis Data</h3>
-          <ol>
-            <li>Reduksi data: memilah informasi relevan.</li>
-            <li>Penyajian data: kategorisasi tematik (kepentingan elit, marginalisasi, dampak ekologis).</li>
-            <li>Penarikan kesimpulan: mengaitkan temuan empiris dengan teori.</li>
-          </ol>
-
-          <hr class="hr" />
-
-          <h2>Hasil dan Pembahasan</h2>
-
-          <h3>A. Sumber Data</h3>
-          <p>
-            Data primer diperoleh melalui wawancara dengan narasumber di berbagai daerah; data sekunder berasal dari laporan LSM (WALHI, JATAM, AMAN), buku/jurnal,
-            serta dokumen kebijakan pemerintah.
-          </p>
-
-          <h3>B. Dominasi Elit dalam Pengelolaan Sumber Daya Alam</h3>
-          <p>
-            Hasil wawancara menunjukkan elit politik dan ekonomi memiliki peran dominan dalam pengelolaan SDA. Dominasi tercermin pada proses pemberian izin tambang,
-            perkebunan, dan proyek besar yang sering berlangsung tertutup serta minim partisipasi publik.
-          </p>
-          <p>
-            Kebijakan SDA umumnya lebih berpihak pada kepentingan korporasi dan kelompok berkuasa. Relasi kuasa antara elit politik, pengusaha, dan pejabat pemerintahan
-            membentuk sistem rentan kolusi dan barter politik.
-          </p>
-          <p>
-            Akibatnya, masyarakat lokal mengalami marginalisasi (kehilangan lahan, sumber air, ruang hidup) dan kerap mendapat tekanan ketika menolak kebijakan merugikan.
-            Partisipasi publik sering bersifat formalitas administratif.
-          </p>
-          <p>
-            Meski begitu, muncul gerakan perlawanan dan advokasi masyarakat sipil (gereja, LSM, kelompok tani, seniman lokal) melalui jalur pendidikan, hukum,
-            dan kesenian sebagai alat perjuangan.
-          </p>
-
-          <h3>C. Bentuk Marginalisasi Masyarakat Lokal dan Adat</h3>
-          <p>
-            Marginalisasi merupakan konsekuensi langsung dari kebijakan/praktik pengelolaan SDA yang dikuasai elit. Proses ini terjadi melalui berbagai bentuk:
-          </p>
-          <ol>
-            <li>
-              <strong>Kehilangan akses terhadap tanah dan sumber kehidupan</strong>: penggusuran dan kehilangan lahan akibat ekspansi tambang/perkebunan/proyek infrastruktur.
-            </li>
-            <li>
-              <strong>Pengabaian suara dan partisipasi</strong>: sosialisasi sepihak tanpa ruang dialog sejati; keputusan sering ditentukan di “meja elit”.
-            </li>
-            <li>
-              <strong>Perusakan nilai budaya dan spiritualitas</strong>: tanah dipandang sebagai identitas spiritual; ketika dirusak/diambil, luka sosial dan psikologis meningkat.
-            </li>
-            <li>
-              <strong>Ketimpangan ekonomi dan sosial</strong>: keuntungan dinikmati elit/korporasi; warga menanggung biaya sosial-ekologis (pencemaran, kehilangan penghidupan).
-            </li>
-            <li>
-              <strong>Dampak konflik dan trauma sosial</strong>: konflik horizontal/vertikal, tekanan psikologis, menurunnya kepercayaan pada negara.
-            </li>
-          </ol>
-
-          <h3>D. Dampak Sosial, Ekonomi, dan Ekologis</h3>
-          <h3>1. Dampak Sosial: Disintegrasi dan Krisis Kemanusiaan</h3>
-          <p>
-            Kehilangan tanah dan ruang hidup memicu perpindahan penduduk dan hilangnya ikatan sosial. Muncul konflik antar komunitas serta konflik antara masyarakat–perusahaan/pemerintah.
-            Ketidakadilan struktural menciptakan rasa kecewa dan tidak percaya.
-          </p>
-
-          <h3>2. Dampak Ekonomi: Ketimpangan dan Ketergantungan</h3>
-          <p>
-            Aktivitas tambang/perkebunan/proyek infrastruktur meningkatkan pendapatan segelintir pihak, namun menghilangkan sumber penghidupan tradisional (bertani, berkebun, menangkap ikan).
-            Kesenjangan ekonomi melebar, pekerjaan untuk warga sekitar sering bersifat kasar dan berupah rendah.
-          </p>
-
-          <h3>3. Dampak Ekologis: Kerusakan Alam dan Krisis Lingkungan</h3>
-          <p>
-            Eksploitasi berlebihan menyebabkan deforestasi, pencemaran air, kerusakan tanah, serta menurunkan daya dukung ekosistem. Limbah industri mencemari sungai dan sawah,
-            mengancam kesehatan manusia dan keanekaragaman hayati. Perubahan bentang alam memicu banjir, longsor, dan kekeringan.
-          </p>
-
-          <h3>E. Upaya dan Strategi Menuju Tata Kelola yang Adil</h3>
-          <p>
-            Tata kelola yang adil memerlukan perubahan moral, struktural, dan sosial. Pengelolaan SDA perlu berlandaskan kesadaran etika lingkungan,
-            memperkuat partisipasi masyarakat lokal/adat dalam pengambilan keputusan, serta reformasi kebijakan dan penegakan hukum yang transparan dan akuntabel.
-          </p>
-          <ul>
-            <li>Penguatan kesadaran moral/spiritualitas lingkungan (termasuk peran lembaga keagamaan).</li>
-            <li>Partisipasi masyarakat yang nyata (dialog sejati, bukan formalitas).</li>
-            <li>Reformasi perizinan/pengawasan yang terbuka untuk publik dan berbasis keberlanjutan.</li>
-            <li>Penguatan masyarakat sipil (LSM, gereja, kelompok tani) untuk advokasi dan pendidikan lingkungan.</li>
-            <li>Arah pembangunan pada keseimbangan ekonomi–sosial–ekologis (ekonomi hijau berbasis komunitas, pemulihan ekosistem, pendidikan etika lingkungan).</li>
-          </ul>
-
-          <hr class="hr" />
-
-          <h2>Kesimpulan</h2>
-          <p>
-            Pengelolaan SDA di Indonesia masih dipengaruhi dominasi elit politik dan ekonomi yang menguasai proses kebijakan, perizinan, serta distribusi manfaat.
-            Ketimpangan struktural menyebabkan marginalisasi masyarakat lokal/adat (kehilangan akses tanah, sumber kehidupan, ruang partisipasi).
-          </p>
-          <p>
-            Eksploitasi SDA berdampak luas secara sosial (disintegrasi, hilangnya identitas budaya, krisis kepercayaan), ekonomi (ketimpangan, ketergantungan),
-            dan ekologis (degradasi, pencemaran, bencana alam). Karena itu, diperlukan tata kelola yang berkeadilan, partisipatif, dan berkelanjutan.
-          </p>
-
-          <h2>Ucapan Terima Kasih</h2>
-          <p>
-            Puji syukur penulis panjatkan ke hadirat Tuhan Yang Maha Esa atas kasih dan penyertaan-Nya sehingga penelitian ini dapat diselesaikan dengan baik.
-            Penulis menyampaikan terima kasih kepada para narasumber yang telah meluangkan waktu, pikiran, dan pengalaman berharga dalam wawancara, yaitu:
-            Ibu Rismawati Simarmata, Bapak Yustus Seo, Ibu Dorkas Seo, Ibu Erma Yuli Hastin, Bapak Leonardus Simarmata, Bapak Hendra Balla,
-            Bapak Fitarieli Zega, Bapak Felipus De Reo Seo, Bapak Ezekiel Paruntu Stuard, dan Bapak Petrus Alfa Erickson Bulu Manu.
-          </p>
-          <p>
-            Ucapan terima kasih juga disampaikan kepada para dosen pembimbing, rekan-rekan, dan keluarga yang telah memberikan dukungan, saran, serta semangat
-            selama proses penelitian berlangsung. Kritik dan saran yang membangun sangat diharapkan demi penyempurnaan karya di masa mendatang.
-          </p>
-
-          <h2>Daftar Pustaka</h2>
-          <ol>
-            <li>Aspinall, E. (2013). <em>Oligarchic democracy in Indonesia: The politics of wealth and power</em>. Singapore: ISEAS Publishing.</li>
-            <li>Bryant, R. L., &amp; Bailey, S. (1997). <em>Third World Political Ecology</em>. London: Routledge.</li>
-            <li>Capra, F. (1996). <em>The Web of Life</em>. New York: Anchor Books.</li>
-            <li>Escobar, A. (1995). <em>Encountering Development</em>. Princeton: Princeton University Press.</li>
-            <li>Gramsci, A. (1971). <em>Selections from the Prison Notebooks</em>. New York: International Publishers.</li>
-            <li>Hall, D., Hirsch, P., &amp; Li, T. M. (2011). <em>Powers of Exclusion</em>. Honolulu: University of Hawai‘i Press.</li>
-            <li>Keraf, A. S. (2010). <em>Etika Lingkungan Hidup</em>. Jakarta: Kompas.</li>
-            <li>Korten, D. C. (2001). <em>When Corporations Rule the World</em>. San Francisco: Berrett-Koehler Publishers.</li>
-            <li>Li, T. M. (2007). <em>The Will to Improve</em>. Durham: Duke University Press.</li>
-            <li>Marx, K. (1867). <em>Das Kapital</em>. Hamburg: Otto Meissner Verlag.</li>
-            <li>Mosca, G. (1939). <em>The Ruling Class</em>. New York: McGraw-Hill.</li>
-            <li>Mulyana, S. (2019). <em>Tata Kelola Sumber Daya Alam Berkelanjutan</em>. Yogyakarta: Deepublish.</li>
-            <li>Pareto, V. (1916). <em>The Mind and Society</em>. New York: Dover Publications.</li>
-            <li>Peluso, N. L. (1992). <em>Rich Forests, Poor People</em>. Berkeley: University of California Press.</li>
-            <li>Ribot, J. C., &amp; Peluso, N. L. (2003). A theory of access. <em>Rural Sociology</em>, 68(2), 153–181.</li>
-            <li>Robbins, P. (2012). <em>Political Ecology: A Critical Introduction</em> (2nd ed.). Oxford: Wiley-Blackwell.</li>
-            <li>Robison, R., &amp; Hadiz, V. R. (2004). <em>Reorganising Power in Indonesia</em>. London: RoutledgeCurzon.</li>
-            <li>Sachs, J. D. (2015). <em>The Age of Sustainable Development</em>. New York: Columbia University Press.</li>
-            <li>Schlosberg, D. (2007). <em>Defining Environmental Justice</em>. Oxford: Oxford University Press.</li>
-            <li>Scott, J. C. (1985). <em>Weapons of the Weak</em>. New Haven: Yale University Press.</li>
-            <li>Sen, A. (1999). <em>Development as Freedom</em>. Oxford: Oxford University Press.</li>
-            <li>Suharto, E. (2006). <em>Kebijakan Sosial dan Pembangunan</em>. Bandung: Alfabeta.</li>
-            <li>WALHI. (2020). <em>Laporan Akhir Tahun: Krisis Ekologis dan Ketimpangan Sosial di Indonesia</em>. Jakarta: WALHI.</li>
-          </ol>
+              <section class="doc-card doc-card--full">
+                <h4>Refleksi Singkat</h4>
+                <p class="muted">
+                  Proyek ini menegaskan isu lingkungan tidak bisa dipisahkan dari keadilan sosial-politik. Kekayaan alam tidak otomatis membawa kesejahteraan bila struktur kekuasaan didominasi segelintir elit.
+                  Sebagai mahasiswa Informatika, saya melihat teknologi dapat menjadi sarana memperluas akses informasi dan memperkuat suara masyarakat.
+                </p>
+              </section>
+            </div>
+          </section>
         </article>
-
-        <aside class="toc" aria-label="Daftar isi">
-          <h2>Daftar Isi</h2>
-          <ol id="toc-list"></ol>
-        </aside>
       </div>
     </main>
 
