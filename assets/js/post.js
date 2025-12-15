@@ -72,6 +72,59 @@ if (article && tocList) {
   headings.forEach((h) => observer.observe(h));
 }
 
+// Quick tabs (Ringkasan Cepat)
+(function initQuickTabs() {
+  const root = document.querySelector('[data-quick-tabs]');
+  if (!root) return;
+
+  const tabs = Array.from(root.querySelectorAll('.quick__tab[role="tab"]'));
+  const panels = Array.from(root.querySelectorAll('.quick__panel[role="tabpanel"]'));
+  if (tabs.length === 0 || panels.length === 0) return;
+
+  function activate(tab) {
+    const id = tab.getAttribute('aria-controls');
+    if (!id) return;
+
+    tabs.forEach((t) => {
+      const active = t === tab;
+      t.classList.toggle('is-active', active);
+      t.setAttribute('aria-selected', String(active));
+      t.tabIndex = active ? 0 : -1;
+    });
+
+    panels.forEach((p) => {
+      const active = p.id === id;
+      p.hidden = !active;
+    });
+  }
+
+  // Click
+  tabs.forEach((t) => t.addEventListener('click', () => activate(t)));
+
+  // Keyboard (left/right)
+  tabs.forEach((t, idx) => {
+    t.addEventListener('keydown', (e) => {
+      const key = e.key;
+      if (key !== 'ArrowLeft' && key !== 'ArrowRight' && key !== 'Home' && key !== 'End') return;
+
+      e.preventDefault();
+      let nextIdx = idx;
+      if (key === 'ArrowLeft') nextIdx = (idx - 1 + tabs.length) % tabs.length;
+      if (key === 'ArrowRight') nextIdx = (idx + 1) % tabs.length;
+      if (key === 'Home') nextIdx = 0;
+      if (key === 'End') nextIdx = tabs.length - 1;
+
+      const next = tabs[nextIdx];
+      next.focus();
+      activate(next);
+    });
+  });
+
+  // Init
+  const initiallySelected = tabs.find((t) => t.getAttribute('aria-selected') === 'true') || tabs[0];
+  activate(initiallySelected);
+})();
+
 // Footer year
 const yearSpan = document.querySelector('#year');
 if (yearSpan) yearSpan.textContent = String(new Date().getFullYear());

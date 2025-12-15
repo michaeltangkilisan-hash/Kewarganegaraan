@@ -247,6 +247,148 @@ body {
   margin: 1.6rem 0;
 }
 
+/* Quick summary */
+
+.quick {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  margin: 1.25rem 0 1.1rem;
+}
+
+.quick__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.quick__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.quick__tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(10px);
+  color: rgba(71, 85, 105, 0.95);
+  padding: 0.52rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: filter 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.quick__tab:hover {
+  filter: brightness(1.03);
+}
+
+.quick__tab.is-active {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
+.quick__tab:focus-visible {
+  outline: 3px solid rgba(79, 70, 229, 0.25);
+  outline-offset: 2px;
+}
+
+.quick__panels {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.95rem 1rem;
+}
+
+.quick__panel p {
+  margin: 0;
+}
+
+.showcase {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+.showcase__title {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.showcase__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.showcase__actions .btn {
+  flex: 1 1 180px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.62rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  filter: brightness(1.03);
+}
+
+/* YouTube: tetap elegan (brand hint), tapi tidak "nabrak" */
+.btn.btn--youtube {
+  background: rgba(255, 255, 255, 0.78);
+  color: #b91c1c;
+  border-color: rgba(185, 28, 28, 0.28);
+}
+
+.btn.btn--youtube:hover {
+  background: rgba(185, 28, 28, 0.08);
+  border-color: rgba(185, 28, 28, 0.38);
+  filter: none;
+}
+
+@media (max-width: 520px) {
+  .quick__tabs {
+    gap: 0.45rem;
+  }
+
+  .quick__tab {
+    flex: 1 1 auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .showcase__actions {
+    flex-direction: column;
+  }
+
+  .showcase__actions .btn {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .quick__panels {
+    padding: 0.85rem 0.9rem;
+  }
+}
+
 /* TOC */
 
 .toc {
